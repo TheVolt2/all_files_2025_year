@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить собаку</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="page-heading">
+    <h2>Добавить собаку</h2>
+    <nav>
+        <ul>
+            <li><a href="dogs.html">Главная</a></li>
+            <li><a href="add_dog.html">Добавить собаку</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="addDogForm" style="background-color: white; padding: 20px;">
+    <h2>Форма добавления собаки</h2>
+    <form action="upload_dog.php" method="post" enctype="multipart/form-data">
+        <label for="dogName">Имя собаки:</label>
+        <input type="text" id="dogName" name="dogName" required><br><br>
+
+        <label for="dogAge">Возраст собаки:</label>
+        <input type="text" id="dogAge" name="dogAge" required><br><br>
+
+        <label for="dogBreed">Порода собаки:</label>
+        <input type="text" id="dogBreed" name="dogBreed" required><br><br>
+
+        <label for="dogCharacter">Характер собаки:</label>
+        <input type="text" id="dogCharacter" name="dogCharacter" required><br><br>
+
+        <label for="dogImage">Изображение собаки:</label>
+        <input type="file" id="dogImage" name="dogImage" required accept="image/*"><br><br>
+
+        <input type="submit" value="Добавить собаку">
+    </form>
+</section>
+
+</body>
+</html>
