@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши собачки</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор помощи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="text-align: right; padding: 10px;">
+        <select id="helpType">
+            <option value="donate">Материальная помощь</option>
+            <option value="care">Уход за животными</option>
+        </select>
+        <button id="submitHelp">Сделать пожертвование</button>
+    </div>
+
+    <script>
+        document.getElementById("submitHelp").addEventListener("click", function() {
+            var helpType = document.getElementById("helpType").value;
+            if (helpType === "donate") {
+                window.location.href = "https://forms.yandex.ru/cloud/662cdf80eb6146f1986f47eb/";
+            } else if (helpType === "care") {
+                window.location.href = "https://forms.yandex.ru/cloud/662cdca7d04688f0d3d55821/";
+            }
+        });
+    </script>
+</body>
+</html>
+
+    <header class="page-heading">
+        <h2>Наши собачки</h2>
+        <nav>
+            <ul>
+                <li><a href="dogs.html">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="catalog" style="background-color: white; padding: 20px;">
+        <h2>Каталог собак</h2>
+        <div class="dog">
+            <img src="dog1.jpg" alt="Собака 1">
+            <h3>Рекс</h3>
+            <p>Возраст: 3 года</p>
+            <p>Порода: Лабрадор</p>
+            <p>Характер: дружелюбный, игривый</p>
+        </div>
+        <div class="dog">
+            <img src="dog2.jpg" alt="Собака 2">
+            <h3>Джек</h3>
+            <p>Возраст: 2 года</p>
+            <p>Порода: Бигль</p>
+            <p>Характер: энергичный, умный</p>
+        </div>
+        <!-- Добавьте других собак -->
+        <div class="dog">
+            <img src="dog3.jpg" alt="Собака 3">
+            <h3>Шарик</h3>
+            <p>Возраст: 4 года</p>
+            <p>Порода: Овчарка</p>
+            <p>Характер: энергичный, игривый</p>
+        </div>
+        <div class="dog">
+            <img src="dog4.jpg" alt="Собака 4">
+            <h3>Бася</h3>
+            <p>Возраст: 2 года</p>
+            <p>Порода: Мопс</p>
+            <p>Характер: спокойный, умный</p>
+        </div>
+        <div class="dog">
+            <img src="dog5.jpg" alt="Собака 5">
+            <h3>Алиса</h3>
+            <p>Возраст: 3 года</p>
+            <p>Порода: Пудель</p>
+            <p>Характер: дружелюбная, игривая</p>
+        </div>
+        <div class="dog">
+            <img src="dog6.jpg" alt="Собака 6">
+            <h3>Бобик</h3>
+            <p>Возраст: 2 года</p>
+            <p>Порода: Чихуахуа</p>
+            <p>Характер: дружелюбный, умный</p>
+        </div>
+
+    </section>
+</body>
+</html>

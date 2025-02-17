@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добрые руки - Собачий приют</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <!-- Главное содержимое -->
+    <div id="mainContent">
+        <header>
+            <!-- Ваш заголовок и навигация -->
+        </header>
+            <header>
+        <h1>Добрые руки</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#catalog">Каталог собак</a></li>
+                <li><a href="#help">Как помочь</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="dogs_catalog.html">Наши собачки</a></li>
+            </ul>
+        </nav>
+    </header>
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор города</title>
+</head>
+
+
+        <section id="about">
+
+            <!-- О нас -->
+            <h2>О нас</h2>
+            <p>Наш приют предоставляет временное убежище и заботу для бездомных животных. Мы заботимся о собаках, кошках и других домашних животных, которые нуждаются в вашей помощи и поддержке.</p>
+        </section>
+
+
+        <section id="catalog" style="background-color: white; padding: 20px;">
+    <h2 style="color: white;">Добрые руки</h2>
+                        <!-- Каталог собак --
+        </section>
+     <section id="catallog" style="background-color: white; padding: 20px;">
+            <-- Кнопка для перехода на вторую страницу -->
+            <h2>Выберите город в Кузбассе чтобы посмотреть каталог собак в вашем городе:</h2>
+    <form id="cityForm" action="dogs_catalog.html" method="post">
+        <select name="city" id="city">
+            <option value="Кемерово">Кемерово</option>
+            <option value="Новокузнецк">Новокузнецк</option>
+            <option value="Прокопьевск">Прокопьевск</option>
+            <option value="Ленинск-Кузнецкий">Ленинск-Кузнецкий</option>
+            <option value="Междуреченск">Междуреченск</option>
+            <option value="Анжеро-Судженск">Анжеро-Судженск</option>
+            <option value="Киселевск">Киселевск</option>
+            <option value="Белово">Белово</option>
+            <option value="Березовский">Березовский</option>
+            <option value="Мыски">Мыски</option>
+            <option value="Юрга">Юрга</option>
+            <option value="Топки">Топки</option>
+            <option value="Калтан">Калтан</option>
+            <option value="Осинники">Осинники</option>
+            <option value="Тайга">Тайга</option>
+            <option value="Промышленная">Промышленная</option>
+            <option value="Южный">Южный</option>
+            <option value="Мариинск">Мариинск</option>
+            <option value="Гурьевск">Гурьевск</option>
+            <option value="Тисуль">Тисуль</option>
+            <option value="Ленинск">Ленинск</option>
+            <option value="Ижморский">Ижморский</option>
+            <option value="Кедровка">Кедровка</option>
+            <!-- Добавьте другие города по желанию -->
+        </select>
+        <button type="submit">Выбрать</button>
+    </form>
+        </section>
+</section>
+
+
+
+
+
+        <section id="help">
+            <!-- Секция с информацией о помощи -->
+            <h2>Как помочь</h2>
+            <p>Мы предлагаем различные способы помощи нашему приюту:</p>
+            <ul>
+                <li>Обеспечение кормом</li>
+                <li>Разовые прогулки с животными</li>
+                <li>Опекунство над питомцем</li>
+                <li>Временная передержка</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <!-- Контактная информация -->
+            <h2>Контакты</h2>
+            <p>Если вы хотите связаться с нами или узнать больше о нашей работе, пожалуйста, используйте следующую контактную информацию:</p>
+            <p>Телефон: 123-456-7890</p>
+            <p>Email: dobryeruki@email.com</p>
+        </section>
+    </div>
+
+    <!-- Скрипт для переключения между формой регистрации и главным содержимым -->
+<script>
+        document.getElementById("registration").addEventListener("submit", function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+
+            // Сохраняем имя пользователя в локальном хранилище
+            localStorage.setItem("username", username);
+
+            // Сохраняем данные в текстовый файл
+            var data = "Имя: " + username + "\nEmail: " + email;
+            var blob = new Blob([data], { type: 'text/plain' });
+            var url = window.URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'registration_data.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            // Отображаем главное содержимое
+            document.getElementById("registrationForm").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5fb9f5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+#cityForm h2 {
+    margin-left: 20px; /* Смещение надписи вправо */
+}
+
+#cityForm select {
+    margin-left: 20px; /* Смещение выбора вправо */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: #000000;
+}
+
+.dog {
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.dog img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dog h3 {
+    margin: 10px 0;
+    color: #000000;
+}
+
+.dog p {
+    margin: 5px 0;
+    color: #000000;
+}
+
+/* Добавьте стили для формы регистрации */
+#registration form {
+    margin-top: 20px;
+}
+
+#registration form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#registration form input[type="text"],
+#registration form input[type="email"],
+#registration form input[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #29a9ff;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+/* Стили для заголовка */
+.page-heading {
+    background-color: #5fb9f5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+select, button {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.page-heading h2 {
+    color: white;
+}
+
+/* Стили для раздела пожертвований */
+#donate {
+    margin-top: 20px;
+}
+
+#donate label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#donate input[type="text"],
+#donate input[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #29a9ff;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+#donate input[type="submit"] {
+    background-color: #5fb9f5;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#donate input[type="submit"]:hover {
+    background-color: #4b8cce;
+}
+
+/* Стили для поля ввода пожертвования */
+#donate input[type="text"] {
+    width: 300px; /* Ширина поля ввода */
+    padding: 10px; /* Отступы вокруг текста в поле ввода */
+    margin-bottom: 10px; /* Отступ снизу */
+    border: 1px solid #29a9ff; /* Граница поля ввода */
+    border-radius: 5px; /* Закругленные углы */
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+/* Стили для выбора города */
+#cityForm {
+    text-align: left; /* Выравнивание текста слева */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+#cityForm select {
+    width: auto; /* Ширина выбора города зависит от его содержимого */
+    display: inline-block; /* Размещаем выбор города в ряд */
+    padding: 10px; /* Отступы внутри поля выбора города */
+    margin-right: 10px; /* Отступ справа */
+    border: 1px solid #29a9ff; /* Граница поля выбора города */
+    border-radius: 5px; /* Закругленные углы */
+    font-family: Arial, sans-serif; /* Шрифт */
+    appearance: none; /* Убираем стандартное визуальное отображение */
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='6' viewBox='0 0 12 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6L0.200034 0H11.7999L6 6Z' fill='%230099FF'/%3E%3C/svg%3E"); /* Стрелка выпадающего списка */
+    background-repeat: no-repeat; /* Отключаем повторение фона */
+    background-position: right 10px center; /* Положение стрелки */
+    cursor: pointer; /* Изменяем курсор при наведении */
+}
+
+#cityForm button {
+    width: auto; /* Ширина кнопки зависит от ее содержимого */
+    display: inline-block; /* Размещаем кнопку в ряд */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста на кнопке */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 5px; /* Закругленные углы кнопки */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+}
+
+#cityForm button:hover {
+    background-color: #0056b3; /* Изменение цвета фона при наведении */
+}
+
+/* Стили для кнопки "Сделать пожертвование" */
+#donate button {
+    width: auto; /* Ширина кнопки зависит от ее содержимого */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста на кнопке */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 5px; /* Закругленные углы кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+}
+
+#donate button:hover {
+    background-color: #0056b3; /* Изменение цвета фона при наведении */
+}
+
+#registration form input[type="submit"] {
+    background-color: #5fb9f5;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5fb9f5;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #4b8cce;
+}
+
+
+.user-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #5fb9f5;
+    color: #ffffff;
+}
